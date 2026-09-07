@@ -21,13 +21,15 @@ Details in [docs/architecture.md](docs/architecture.md).
 
 ## Technologies used
 
-| Layer            | Technology                                |
-|-------------------|-------------------------------------------|
-| Sensor node       | ESP32, FreeRTOS, PlatformIO, DHT22 sensor |
-| Gateway OS        | Buildroot (optionally Yocto later)        |
-| Communication     | MQTT (Mosquitto broker)                   |
-| Data storage      | SQLite / InfluxDB                         |
-| Visualization     | Grafana                                   |
+| Layer                        | Technology                                      |
+|------------------------------|-------------------------------------------      |
+| Reflex layer                 | ESP32, FreeRTOS, PlatformIO, DC motor driver    |
+| Actuation                    | TB6612FNG dual motor driver, 2x DC gear motors  |
+| Distance Measurement         | HC-SR04 ultrasonic sensor                       |        
+| Power supply                 | battery pack + USB power bank for the Pi        |
+| Object recognition layer     | Raspberry Pi and ROS2                           |
+| Data Transfer / Exchange.    | MQTT (Mosqutto).                                |
+|Visualization.                | Flask Dashboard.                                |
 
 ## Project structure
 
