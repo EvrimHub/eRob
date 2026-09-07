@@ -34,7 +34,7 @@ Details in [docs/architecture.md](docs/architecture.md).
 ## Project structure
 
 ```
-bosporus/
+eRob/
 ├── README.md
 ├── docs/
 │   ├── architecture.md      # Detailed system architecture
@@ -44,24 +44,11 @@ bosporus/
 │   ├── risk-register.md     # Risks and mitigations
 │   ├── glossary.md          # Abbreviations and terms used
 │   └── images/              # Photos and screenshots from the build
-├── sensor-node/              # Firmware for the ESP32 (to follow)
-├── gateway/                   # Buildroot configuration, scripts (to follow)
-└── dashboard/                 # Grafana configuration / web UI (to follow)
+├── Reflex layer/              # Firmware for the ESP32 (to follow)
+├── Object recognition layer/  # ROS2 packages, ML interference
+└── dashboard/                 # Flask dashboard
 ```
-
-## Status
-
-🔧 In progress – project for the targeted refresh of embedded knowledge as part of a
-technical project leadership role in the embedded space.
 
 ## Motivation
 
-As a technical project lead in the embedded space – including hands-on development
-experience of my own, such as a C++ application on an embedded Linux board with an
-AVR32 processor – it matters to me not just to coordinate technical work, but to
-understand it from practical experience: cross-compiling, bootloader/kernel, toolchains,
-component supply chains, testing strategies.
-
-This project brings that understanding up to the current state of the art – from modern
-build systems to today's development workflows – and serves as practical evidence of
-this competence for a technical project leadership role in the embedded space.
+Hands-on evidence of technical depth for a technical project leadership role in Robotics, Embedded Systems Design with Machine Learning application.  
