@@ -1,6 +1,6 @@
 # eRob – Robot Vacuum Portfolio Project
 
-An end-to-end project to refresh and demonstrate skills for a Technical Project Manager role in
+An end-to-end project to refresh and demonstrate skills role in
 Robotics or an embedded developer role in Embedded Systems design, preferably in combination with
 Machine Learning.
 
