@@ -7,11 +7,22 @@
 | R-01 | After powering on, eRob starts moving through the flat | Must |
 | R-02 | eRob detects an obstacle before collision, at a defined distance threshold| Must |
 | R-03 | eRob changes direction away from a detected obstacle | Must |
-| F-08 | Detected objects/obstacles are published as ROS2 topics | Should |
-| F-09 | A dashboard displays live camera feed, detected objects, and robot status | Should |
-| F-10 | Multiple detection classes can be distinguished (e.g. wall, shoe, pet) | Could |
+| R-04 | eRob detects an edge/drop-off and moves back before falling | Must |
+| R-05 | eRob supports manual remote control (override/teleoperation) — solution-agnostic version of the old "MQTT" bullet| Must |
+| F-06 | Detected objects/obstacles are made accessible to the user — solution-agnostic version of the old "ROS2 topics / dashboard" bullets; how (dashboard vs. file vs. topic) is a design choice for the tech spec | Should |
+| R-07 | Multiple detection classes can be distinguished (e.g. wall, shoe, pet) | Must |
 
 ## Non-functional requirements
+**Systems/reliability**
+
+| ID   | Requirement                                                                          | Priority |
+|------|----------------------------------------------------------------------------------------|----------|
+| NR-01 | reflex layer works standalone without the Pi | Must |
+| NR-02 | system runs untethered for a defined session length | Must |
+
+**Electrical**
+
+**Mechanical**
 
 | ID    | Requirement                                                                            |
 |-------|------------------------------------------------------------------------------------------|
