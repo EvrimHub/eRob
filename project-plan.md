@@ -13,6 +13,15 @@
 | 6     | Documentation & portfolio              | Finalize docs, clean up GitHub repo, write up architecture decisions               | Presentable project for job applications        | ⬜ Not started | on going | |
 | 7     | (Deferred) Cleaning mechanism           | Add actual vacuuming hardware: Out of Scope                                       | Documented as future work                       | ⬜ Deferred    | | |
 
+## Timeframe
+
+- **Week 36**: Preparation, ordering hardware
+- **Week 37-38**: Assemble chassis, wire motor driver to ESP32, minimal motor-control firmware, MQTT-driven teleoperation
+- **Week 39-40**: Reflex avoidance - Add HC-SR04, implement immediate stop/turn avoidance logic, standalone from the Pi
+- **Week 41-42**: Setup ROS2
+- **Week 43-44**: Add camera module, run lightweight on-device ML model, publish detections          
+- **Week 45-45**: Dashboard
+
 ## Definition of done per phase
 
 A phase counts as complete when:
