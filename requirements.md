@@ -13,7 +13,7 @@
 | R-07 | Multiple detection classes can be distinguished (e.g. wall, shoe, pet) | Must |
 
 ## Non-functional requirements
-**Systems/reliability**
+**Systems reliability**
 
 | ID   | Requirement                                                                          | Priority |
 |------|----------------------------------------------------------------------------------------|----------|
@@ -21,12 +21,15 @@
 | NR-02 | system runs untethered for a defined session length | Must |
 
 **Electrical**
+| ID   | Requirement                                                                          | Priority |
+|------|----------------------------------------------------------------------------------------|----------|
+| ER-01 | eRob shall remain operational, with no unintended resets or malfunction of the logic/compute subsystem, during motor-induced load transients (e.g. stall current spikes) | Must |
 
 **Mechanical**
 
 | ID    | Requirement                                                                            |
 |-------|------------------------------------------------------------------------------------------|
-| N-01  | Motor power and logic/compute power are electrically isolated (separate battery packs)   |
+
 | N-02  | The reflex layer's control loop runs with low, predictable latency (no ML/network dependency in the avoidance path) |
 | N-03  | The system runs untethered (no wired power) for at least one continuous test session     |
 | N-04  | The architecture is documented clearly enough that a third person can follow the reflex/cognition split |
@@ -40,3 +43,10 @@
 - No production-grade security hardening (same rationale as Bosporus: focus is on learning core principles)
 - No cloud connectivity — local network only
 - No custom PCB/enclosure design in v1 — breadboard/chassis-kit build is sufficient
+
+Notes for Technical Specification
+
+Load transient immunity (NFR-xx) is achieved via physically separate battery supplies for motor and logic/compute subsystems, with a shared ground reference. Spec for ER-01.
+
+
+
