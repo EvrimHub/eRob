@@ -17,13 +17,19 @@
 
 | ID   | Requirement                                                                          | Priority |
 |------|----------------------------------------------------------------------------------------|----------|
-| NR-01 | reflex layer works standalone without the Pi | Must |
-| NR-02 | system runs untethered for a defined session length | Must |
+| NR-01 | eRob avoids obstacles regardless of whether any higher-level processing (e.g. object recognition, navigation) is available, running, or has completed | Must |
+| NR-02 | eRob must be able to operate purely on its own onboard batteries, with no cable to anything external, for at least some minimum duration. | Must |
 
 **Electrical**
+
 | ID   | Requirement                                                                          | Priority |
 |------|----------------------------------------------------------------------------------------|----------|
 | ER-01 | eRob shall remain operational, with no unintended resets or malfunction of the logic/compute subsystem, during motor-induced load transients (e.g. stall current spikes) | Must |
+| ER-02 | eRob's exposed surfaces shall not exceed [X]°C during normal operation.| Must |
+| ER-03 | eRob shall use battery types requiring no special hazardous-handling procedures.| Must |
+| ER-04 | eRob's WiFi radios shall not noticeably degrade other household devices' WiFi performance.| Must |
+| ER-05 | eRob's WiFi radios shall not noticeably degrade other household devices' WiFi performance.| Must |
+| ER-06 | eRob shall indicate to the user when battery level is low. | Must |
 
 **Mechanical**
 
