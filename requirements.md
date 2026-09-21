@@ -24,23 +24,19 @@
 
 | ID   | Requirement                                                                          | Priority |
 |------|----------------------------------------------------------------------------------------|----------|
-| ER-01 | eRob shall remain operational, with no unintended resets or malfunction of the logic/compute subsystem, during motor-induced load transients (e.g. stall current spikes) | Must |
-| ER-02 | eRob's exposed surfaces shall not exceed [X]°C during normal operation.| Must |
-| ER-03 | eRob shall use battery types requiring no special hazardous-handling procedures.| Must |
-| ER-04 | eRob's WiFi radios shall not noticeably degrade other household devices' WiFi performance.| Must |
-| ER-05 | eRob's WiFi radios shall not noticeably degrade other household devices' WiFi performance.| Must |
-| ER-06 | eRob shall indicate to the user when battery level is low. | Must |
+| ER-01 | eRob shall remain operational, with no unintended resets or malfunction of the logic/compute subsystem, during motor-induced load transients (e.g. stall current spikes) | Shall |
+| ER-02 | eRob's exposed surfaces shall not exceed 40°C during normal operation.| Shall |
+| ER-03 | eRob shall use battery types requiring no special hazardous-handling procedures.| Shall |
+| ER-04 | eRob's WiFi radios shall not noticeably degrade other household devices' WiFi performance.| Shall |
+| ER-05 | eRob shall indicate to the user when battery level is low. | Shall |
 
 **Mechanical**
 
-| ID    | Requirement                                                                            |
-|-------|------------------------------------------------------------------------------------------|
-
-| N-02  | The reflex layer's control loop runs with low, predictable latency (no ML/network dependency in the avoidance path) |
-| N-03  | The system runs untethered (no wired power) for at least one continuous test session     |
-| N-04  | The architecture is documented clearly enough that a third person can follow the reflex/cognition split |
-| N-05  | Configuration and code are version-controlled and reproducible                           |
-| N-06  | The build reuses Bosporus's ESP32 and Raspberry Pi without compromising Bosporus's own documented, working state |
+| ID    | Requirement                                                                              | Priority |
+|-------|------------------------------------------------------------------------------------------|----------|
+| M-01  | Mechanical assembly must remain rigid under motor torque and normal operation vibration  | Shall    |
+| M-02  | eRob's wheels must rotate freely with no rubbing or binding against the chassis          | Shall    |
+| M-03  | eRob must move reliably across typical indoor flooring (hardwood, carpet, tile)          | Shall    |
 
 ## Out of scope (deliberately excluded from this version)
 
