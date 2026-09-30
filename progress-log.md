@@ -1,18 +1,17 @@
-# Progress log – Bosporus
+# Progress log – eRob
 
 This dated log documents the process and the key steps, and the progress of the project along with its artifacts.
 
 ---
 
-## *10.07.2026* – Phase 1: Sensor node soldering & first readings
+## *10.07.2026* – Phase 0: Preparation
 
-### What I did
+### HW Specification
+ 
 
-**HW Setup**
+**HW Ordering**
 
-Soldered the two 15-pin header strips onto the Arduino Nano ESP32 (first solder joints
-in a while — a bit rough around the edges, but electrically sound). Wired the DHT22 to
-the board on a breadboard (VCC → 3V3, DATA → D2, GND → GND).
+Order chassis, motor driver, HC-SR04, resistor kit, motor battery pack, second deck plate + standoffs, power bank, multimeter.
 
 **SW Setup**
 - Set up PlatformIO in VS Code
